@@ -60,3 +60,7 @@ This mini-project showcases the application of digital signal processing and mac
 
 Future improvements could include exploring deep learning models, adding time-series visualization tools, and extending the solution toward real-time seizure prediction.
 
+## Contact
+For questions or collaboration inquiries, feel free to reach out:
+- [LinkedIn](https://www.linkedin.com/in/yourusername)
+- [Email](mailto:your.email@example.com)
