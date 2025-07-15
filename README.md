@@ -26,7 +26,37 @@ While the scope is academic, the methodology aligns with practical challenges in
 1. **Dataset Acquisition**: EEG signals sourced from the publicly available Bonn University dataset, encompassing five distinct categories (A–E), totaling 500 EEG recordings.
 2. **Preprocessing**: Bandpass filtering and smoothing applied to raw signals. Each 4097-point time series was segmented into 1-second windows of 178 data points.
 3. **Labeling**: Segments labeled based on seizure presence, with class `1` indicating epileptic seizure activity and classes `2–5` denoting non-seizure cases.
-4. **Model Training**: Features extracted from each segment were fed into machine learning classifiers (e.g., Random Forest, SVM) implemented in MATLAB.
+4. **Model Training**: Features extracted from each segment were fed into machine learning classifiers (e.g., Decision tree, Random forest) implemented in MATLAB.
 5. **Performance Evaluation**: Accuracy and confusion matrices used to assess model performance.
 
+## 📊 Dataset Description
+
+- EEG recordings include 500 files representing individual subjects, each sampled at 173.6 Hz for ~23.6 seconds.
+- Data organized into five sets:
+  - **Set A, B** – Healthy individuals (eyes open/closed)
+  - **Set C, D** – Non-seizure activity in epileptic patients
+  - **Set E** – Epileptic seizure activity
+- Each recording contains 4096 samples. After segmentation:
+  - Total of **11,500** 1-second segments created (178 features + 1 label per row)
+- Response variable `y ∈ {1, 2, 3, 4, 5}` used for classification, with binary focus on seizure (`y = 1`) vs non-seizure (`y = 2–5`).
+
+## 📈 Results
+
+The trained classifiers were evaluated on a test subset of EEG signal segments. Performance metrics such as accuracy, precision, recall, and confusion matrix were used to assess seizure detection capability.
+
+- **Random Forest**: Achieved an overall accuracy of ~95%, with high sensitivity for seizure detection.
+- **Decision tree**: Delivered comparable results, though slightly lower precision on non-seizure classifications.
+- **Confusion Matrix**: Indicates balanced classification with minimal false negatives for class 1 (seizure).
+
+<img width="1215" height="712" alt="image" src="https://github.com/user-attachments/assets/fada55ef-ca7e-4891-b022-66b57005dbf6" />
+
+<img width="1200" height="633" alt="image" src="https://github.com/user-attachments/assets/23fc3fba-8095-4419-9246-cc766a138e03" />
+
+These results suggest the viability of feature-based approaches for distinguishing between seizure and non-seizure EEG segments in a controlled dataset.
+
+## 🧾 Conclusion
+
+This mini-project showcases the application of digital signal processing and machine learning techniques for seizure classification using EEG data. While developed within the scope of a lab assignment, the approach demonstrates scalable potential for further research or clinical adaptation.
+
+Future improvements could include exploring deep learning models, adding time-series visualization tools, and extending the solution toward real-time seizure prediction.
 
