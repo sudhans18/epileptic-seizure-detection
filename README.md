@@ -1,4 +1,4 @@
-<h1 align="center">Eplileptic Seisure Detection</h1>
+<h1 align="center">Epileptic Seisure Detection</h1>
 
 ## 🧠 About This Project
 
