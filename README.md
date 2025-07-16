@@ -63,4 +63,4 @@ Future improvements could include exploring deep learning models, adding time-se
 ## Contact
 For questions or collaboration inquiries, feel free to reach out:
 - [LinkedIn](https://www.linkedin.com/in/yourusername)
-- [Email](mailto:your.email@example.com)
+- [Email](mailto:sudhan4843@gmail.com)
